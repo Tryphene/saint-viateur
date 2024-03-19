@@ -1,0 +1,205 @@
+/* Calendrier.css */
+
+/* Styles pour le conteneur du calendrier */
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #C3CAD8;
+  /* padding: 10px; */
+  width: 400px;
+  background-color: #fff;
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+/* Styles pour l'en-tête */
+.k {
+  display: flex;
+  width: 400px;
+  background-color: #fff;
+}
+
+.cl {
+  color: #486CEE;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  width: 400px;
+  /* margin-bottom: 10px; */
+  border-top: 1px solid #C3CAD8;
+  border-left: 1px solid #C3CAD8;
+  border-right: 1px solid #C3CAD8;
+  border-radius: 1px solid #C3CAD8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
+}
+
+
+.header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Styles pour les jours de la semaine */
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.weekdays .day {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles pour les jours du calendrier */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+  gap: 1px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer; 
+  /* border-radius: 10px; */
+  /* border-bottom: 4px solid #86EFAC; */
+}
+
+.bo {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 200px;
+  background-color: white;
+  color: gray;
+  width: 50px;
+  height: 50px;
+
+}
+
+.bg-body:hover {
+  background-color: #C3CAD8;
+}
+
+.disable {
+  /* background-color: #FEF2F2; */
+  color: gray;
+  cursor: not-allowed;
+  border-radius: 10px;
+  border: none;
+}
+
+.disabled {
+  /* background-color: #e4e2e2; */
+  color: gray;
+  cursor: not-allowed;
+  border-radius: 10px;
+  border: none;
+}
+
+.date-indisponible{
+  color: #a52525;
+}
+
+.today {
+  background-color: #EFF6FF;
+  /* border: 1px solid #; */
+  border-bottom: 4px solid #86EFAC;
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+
+.other-month-day {
+  color: gray;
+  background-color: white;
+  border: none;
+}
+
+.selected {
+  /* background-color: #FFEDD5; */
+  background-color: #486CEE;
+  /* background-color: #486cee88; */
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+
+.ig {
+  width: 165px;
+}
+
+.boutton:hover {
+  border: 1px solid #486CEE;
+}
+
+.bouttonActive {
+  background-color: #486CEE;
+}
+
+@media (max-width: 520px) {
+  .ig {
+    width: 100px;
+  }
+
+  .calendar {
+    font-family: Arial, sans-serif;
+    border: 1px solid #C3CAD8;
+    /* padding: 10px; */
+    width: 400px;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 0.2fr);
+    gap: 1px;
+  }
+  
+  .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    cursor: pointer; 
+    /* border-radius: 10px; */
+    /* border-bottom: 4px solid #86EFAC; */
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    width: 300px;
+    /* margin-bottom: 10px; */
+    border-top: 1px solid #C3CAD8;
+    border-left: 1px solid #C3CAD8;
+    border-right: 1px solid #C3CAD8;
+    border-radius: 1px solid #C3CAD8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40px;
+  } 
+}

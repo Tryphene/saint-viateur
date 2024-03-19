@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NX9BX6PF");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logoo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Site officiel du Conservatoire Saint Viateur d'Abidjan"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="author" content="Conservatoire Saint Viateur d'Abidjan" />
+    <meta
+      name="keywords"
+      content="saint viateur, viateur, musique, Conservatoire"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logoo.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,9 +45,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Conservatoire Saint Viateur d'Abidjan</title>
+    <!-- <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Comforter+Brush&family=Montserrat:ital,wght@1,700&family=Playfair+Display:ital,wght@0,500;1,400&family=REM:wght@200&display=swap");
+    </style> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body style="background-color: #f7f7ff">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NX9BX6PF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- <body style="background-color: white"> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,4 +85,32 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- <script src="script.js"></script> -->
+
+  <script
+    src=" https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js "
+    crossorigin
+  ></script>
+
+  <script
+    src=" https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js "
+    crossorigin
+  ></script>
+
+  <script
+    src=" https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js "
+    crossorigin
+  ></script>
+
+  <script>
+    var Alert = ReactBootstrap.Alert;
+  </script>
+  <!-- <script type="text/javaScript">
+    window.addEventListenner('scroll', reveal)
+
+    function reveal() {
+      var reveals = document.querySelector('.qualite')
+      var windowH
+    }
+  </script> -->
 </html>

@@ -1,0 +1,31 @@
+.conteneur-footer {
+    padding: 80px 300px;
+    width: 100%;
+    height: auto;
+    background-color: #263238;
+    color: white;
+}
+
+.text-footer {
+    color: rgb(177, 176, 176);
+    font-size: 14.5px;
+}
+
+.text-bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .conteneur-footer {
+        padding: 50px 60px;
+    }
+
+    .text-bas {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        padding: 10px 20px;
+    }
+}

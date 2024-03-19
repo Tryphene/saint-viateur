@@ -1,0 +1,54 @@
+.nav {
+    left: -250px;
+}
+
+.menu {
+    left: -250px;
+    width: 0;
+    height: 0;
+}
+
+idebar-icon, idebar-item {
+    left: -300px;
+}
+
+@media (max-width: 780px) {
+    .nav {
+        width: 100%;
+        height: auto;
+        background-color: #303030;
+        transition: left 0.3s ease-in;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rond {
+        background-color: white;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        left: 0;
+        background-color: #303030;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        /* margin-top: 50px; */
+        align-items: center;
+        transition: bottom 0.3s ease-in;
+        top: 50px;
+
+    }
+
+}
